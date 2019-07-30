@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Date Difference View</title>
+</head>
+<body>
+<form th:action="@{/result}" th:object="${dateForm}" method="post">
+	<label>Start Date : </label>
+	<input type="date" name="startDate" >
+	<br>
+	<label>End Date   : </label>
+	<input type="date" name="endDate" >
+	
+	<br>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>
